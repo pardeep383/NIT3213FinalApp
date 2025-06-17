@@ -47,8 +47,8 @@ This app includes:
 ## 🧪 Unit Testing
 
 Includes:
-- ✅ LoginResponse test
-- ✅ DashboardResponse test
+- ✅ RetrofitClient test
+- ✅ DashboardActivity test
 - ✅ LoginActivity test
 
 ---
