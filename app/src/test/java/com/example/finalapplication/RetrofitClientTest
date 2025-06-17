@@ -1,0 +1,21 @@
+package com.example.finalapplication
+
+import org.junit.Assert.*
+import org.junit.Test
+import retrofit2.Retrofit
+
+class RetrofitClientTest {
+
+    @Test
+    fun `getInstance should return a non-null Retrofit object`() {
+        val instance: Retrofit = RetrofitClient.getInstance()
+        assertNotNull(instance)
+    }
+
+    @Test
+    fun `Retrofit base URL should be correct`() {
+        val instance: Retrofit = RetrofitClient.getInstance()
+        val baseUrl = instance.baseUrl().toString()
+        assertEquals("https://nit3213api.onrender.com/", baseUrl)
+    }
+}

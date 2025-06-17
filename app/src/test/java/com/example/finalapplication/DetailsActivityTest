@@ -1,0 +1,21 @@
+package com.example.finalapplication
+
+import org.junit.Test
+import org.junit.Assert.*
+
+class DetailsDataTest {
+
+    @Test
+    fun `entity data should match expected plant details`() {
+        val entity: ApiObject = mapOf(
+            "commonName" to "Snake Plant",
+            "scientificName" to "Sansevieria trifasciata",
+            "lightRequirement" to "Low to bright indirect light"
+        )
+
+        assertTrue(entity.containsKey("scientificName"))
+        assertEquals("Snake Plant", entity["commonName"])
+        assertEquals("Sansevieria trifasciata", entity["scientificName"])
+        assertEquals("Low to bright indirect light", entity["lightRequirement"])
+    }
+}

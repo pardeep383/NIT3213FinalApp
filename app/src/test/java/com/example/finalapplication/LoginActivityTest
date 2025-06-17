@@ -1,0 +1,15 @@
+package com.example.finalapplication
+
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class LoginResponseTest {
+
+    @Test
+    fun `login response fields should be assigned correctly`() {
+        val response = LoginResponse(username = "Pardeep", keypass = "plants")
+
+        assertEquals("Pardeep", response.username)
+        assertEquals("plants", response.keypass)
+    }
+}

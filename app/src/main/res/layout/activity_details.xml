@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2E7E7"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#F2E6E6"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6dp"
+            android:text="Details appear here"
+            android:textColor="#222222"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <!-- Logout button anchored at bottom -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D32F2F"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
